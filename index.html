@@ -18,17 +18,29 @@
                 font-family: 'sf-compact-italic';
                 src: url('https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/fonts/SF-Compact-Italic.ttf') format('truetype');
             }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             p {
                 margin: 0;
             }
             #container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(255, 196, 247);
+                /* justify-content: center; */
+                /* align-items: center; */
+            }
+            #container-container {
                 background-color: #000000;
                 color: #FFFFFF;
                 font-family: 'sdc';
                 display: flex;
                 flex-direction: column;
-                /* justify-content: center; */
-                /* align-items: center; */
+                width: 500px;
             }
             #header {
                 background-color: #FFFFFF;
@@ -72,7 +84,6 @@
             }
             #events-gist > p {
                 padding-top: .75em;
-                padding-bottom: .75em;
                 padding-left: .5em;
                 padding-right: .5em;
             }
@@ -80,29 +91,141 @@
                 color:#ff74ea;
                 text-decoration: none;
             }
+            #rolls-title {
+                margin-top: 1em;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 3.5rem;
+                justify-content: center;
+                align-items: center;
+            }
+            #rolls-title > p:not(:last-child) {
+                padding-right: .1em;
+            }
+            #rolls-title > p:last-child {
+                padding-right: .2em;
+            }
+            #rolls-times {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #saturday-row {
+                margin-top: 1rem;
+                display: flex;
+                font-size: 2rem;
+                flex-wrap: wrap;
+            }
+            #sunday-row {
+                margin-top: 1rem;
+                display: flex;
+                font-size: 2rem;
+                flex-wrap: wrap;
+            }
+            #saturday-row > p:not(:last-child){
+                margin-right: 2vw;
+                padding-right: .5em;
+            }
+            #sunday-row > p:not(:last-child){
+                margin-right: 2vw;
+                padding-right: .5em;
+            }
+            #rolls-gist {
+                margin-top: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                font-size: 2rem;
+            }
+            #rolls-gist > p:not(:last-child) {
+                padding-right: .35em;
+            }
+            #rolls-gist > a {
+                color: #ff74ea;
+                padding-right: .35em;
+                text-decoration: none;
+            }
+            #other {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #other > p {
+                margin-top: 1em;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 3.5rem;
+                justify-content: center;
+                align-items: center;
+            }
+            #other-gist {
+                font-family: 'sf-compact-italic';
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            #other-gist > p > a {
+                color:#ff74ea;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
         <div id="container">
-            <div id="header">
-                <div id="title">
-                    <p>SDC</p><p>RD24</p><p>Pushers</p>
+            <div id="container-container">
+                <div id="header">
+                    <div id="title">
+                        <p>SDC</p><p>RD24</p><p>Pushers</p>
+                    </div>
+                </div>
+
+                <div id="events">
+                    <div id="events-title">
+                        <p>Events</p><p>/</p><p>WorKouts</p>
+                    </div>
+                    <div id="events-gist">
+                        <p>
+                            Throughout the week the Push Captains hold multiple Workouts
+                            and occasional fun events. Stay tuned on our <a href="https://calendar.google.com/calendar/embed?src=c_ec657026c5fc3ee0f6e52a07bdb721f1d8bdfa2b69d980bd9610dd0b7293cea8%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank">
+                            Google Calendar</a> so you don't miss out!
+                        </p>
+                    </div>
+                </div>
+
+                <div id="weekend-rolls">
+                    <div id="rolls-title">
+                        <p>WeeKenD</p><p>Rolls</p>
+                    </div>
+                    <div id="rolls-times">
+                        <div id="saturday-row">
+                            <p>SaturDay</p><p>-</p><p>7-9AM</p>
+                        </div>
+                        <div id="sunday-row">
+                            <p>SunDay</p><p>-</p><p>7-9AM</p>
+                        </div>
+                    </div>
+                    <div id="rolls-gist">
+                        <p>Please</p><p>Meet</p><a href = "https://maps.app.goo.gl/suGsrxVkJBiw6oa5A" target="_blank"
+                        >Here</a><p>!!!</p>
+                    </div>
+                </div>
+
+                <div id="other">
+                    <p>Other</p>
+                    <div id="other-gist">
+                        <p>
+                            Please fill out this <a href="" target="_blank"
+                            >form</a> to be added to our preliminary roster 
+                            for raceday teams and push practice
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <div id="events">
-                <div id="events-title">
-                    <p>Events</p><p>/</p><p>WorKouts</p>
-                </div>
-                <div id="events-gist">
-                    <p>
-                        Throughout the week the Push Captains hold multiple Workouts
-                        and occasional fun events. Stay tuned on our <a href="https://calendar.google.com/calendar/embed?src=c_ec657026c5fc3ee0f6e52a07bdb721f1d8bdfa2b69d980bd9610dd0b7293cea8%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank">
-                        Google Calendar</a> so you don't miss out!
-                    </p>
-                </div>
-            </div>
-
         </div>
     </body>
 </html>
