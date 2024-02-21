@@ -5,9 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SDC Pushers RD24 Mailing List</title>
         <style>
+            @font-face {
+                font-family: 'sdc';
+                src: url('https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/fonts/sdcbuggystdfont.TTF') format('truetype');
+            }
+            p {
+                margin: 0;
+            }
+            #container {
+                background-color: #000000;
+                color: #FFFFFF;
+                font-family: 'sdc';
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center; */
+                /* align-items: center; */
+            }
+            #header {
+                background-color: #FFFFFF;
+                color: #000000;
+            }
+            #title {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 3.5rem;
+                justify-content: center;
+                align-items: center;
+            }
+            #title > p:not(:last-child) {
+                margin-right: 5vw;
+                padding-right: .15em;
+            }
+
         </style>
     </head>
     <body>
-
+        <div id="container">
+            <div id="header">
+                <div id="title">
+                    <p>SDC</p><p>RD24</p><p>Pushers</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
