@@ -5,9 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SDC Pushers RD24 Mailing List</title>
         <style>
+            /* Note that all SF fonts are developed and owned by Apple */
             @font-face {
                 font-family: 'sdc';
                 src: url('https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/fonts/sdcbuggystdfont.TTF') format('truetype');
+            }
+            @font-face {
+                font-family: 'sf-compact';
+                src: url('https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/fonts/SF-Compact.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'sf-compact-italic';
+                src: url('https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/fonts/SF-Compact-Italic.ttf') format('truetype');
             }
             p {
                 margin: 0;
@@ -28,23 +37,24 @@
             #title {
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 3.5rem;
+                font-size: 5rem;
                 justify-content: center;
                 align-items: center;
             }
             #title > p:not(:last-child) {
-                margin-right: 3vw;
+                margin-right: 1vw;
                 padding-right: .15em;
             }
             #events {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
             #events-title {
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 justify-content: center;
                 align-items: center;
             }
@@ -52,7 +62,24 @@
                 margin-right: 2vw;
                 padding-right: .1em;
             }
-
+            #events-gist {
+                font-family: 'sf-compact-italic';
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            #events-gist > p {
+                padding-top: .75em;
+                padding-bottom: .75em;
+                padding-left: .5em;
+                padding-right: .5em;
+            }
+            #events-gist > p > a {
+                color:#ff74ea;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
@@ -66,6 +93,13 @@
             <div id="events">
                 <div id="events-title">
                     <p>Events</p><p>/</p><p>WorKouts</p>
+                </div>
+                <div id="events-gist">
+                    <p>
+                        Throughout the week the Push Captains hold multiple Workouts
+                        and occasional fun events. Stay tuned on our <a href="https://calendar.google.com/calendar/embed?src=c_ec657026c5fc3ee0f6e52a07bdb721f1d8bdfa2b69d980bd9610dd0b7293cea8%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank">
+                        Google Calendar</a> so you don't miss out!
+                    </p>
                 </div>
             </div>
 
