@@ -92,7 +92,6 @@
                 text-decoration: none;
             }
             #rolls-title {
-                margin-top: 1em;
                 display: flex;
                 flex-wrap: wrap;
                 font-size: 3.5rem;
@@ -131,6 +130,9 @@
                 margin-right: 2vw;
                 padding-right: .5em;
             }
+            #weekend-rolls {
+                margin-top: 1em;
+            }
             #rolls-gist {
                 margin-top: 1em;
                 display: flex;
@@ -148,13 +150,13 @@
                 text-decoration: none;
             }
             #other {
+                margin-top: 1em;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
             #other > p {
-                margin-top: 1em;
                 display: flex;
                 flex-wrap: wrap;
                 font-size: 3.5rem;
@@ -189,6 +191,21 @@
             }
             #moto > p:not(:last-child) {
                 padding-right: .1em;
+            }
+            #logos {
+                margin-top: .75em;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            #discord {
+                height: 50px;
+                width: auto;
+            }
+            #instagram {
+                height: 60px;
+                width: auto;
             }
         </style>
     </head>
@@ -249,7 +266,14 @@
                     </div>
                     <div id="logos">
                         <a>
-                            <img src="">
+                            <img id="discord" 
+                                src="https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/logos/discord-logo-blue.svg"
+                            >
+                        </a>
+                        <a>
+                            <img id="instagram"
+                                src="https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/logos/instagram.svg"
+                            >
                         </a>
                     </div>
                 </div>
