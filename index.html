@@ -19,193 +19,67 @@
                 src: url('https://raw.githubusercontent.com/HomieOmie/SDCBuggy-Email/main/fonts/SF-Compact-Italic.ttf') format('truetype');
             }
             body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                display: flex; justify-content: center; align-items: center;
             }
             p {
                 margin: 0;
             }
             #container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgb(255, 196, 247);
+                display: flex; justify-content: center; align-items: center; background-color: rgb(255, 196, 247);
                 /* justify-content: center; */
                 /* align-items: center; */
             }
             #container-container {
-                background-color: #000000;
-                color: #FFFFFF;
-                font-family: 'sdc';
-                display: flex;
-                flex-direction: column;
-                width: 100vw;
+                background-color: #000000; color: #FFFFFF; font-family: 'sdc'; display: flex; flex-direction: column; width: 100vw;
             }
             #header {
-                background-color: #FFFFFF;
-                color: #000000;
+                background-color: #FFFFFF; color: #000000;
             }
             #title {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 5rem;
-                justify-content: center;
-                align-items: center;
-            }
-            #title > p:not(:last-child) {
-                margin-right: 1vw;
-                padding-right: .15em;
+                display: flex; justify-content: center; align-items: center;
             }
             #events {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            #events-title {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 3.5rem;
-                justify-content: center;
-                align-items: center;
-            }
-            #events-title > p:not(:last-child) {
-                margin-right: 2vw;
-                padding-right: .1em;
+                display: flex; flex-direction: column; justify-content: center; align-items: center;
             }
             #events-gist {
-                font-family: 'sf-compact-italic';
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                font-size: 1.5rem;
+                font-family: 'sf-compact-italic'; display: flex; justify-content: center; align-content: center; text-align: center; font-size: 1.5rem;
             }
             #events-gist > p {
-                padding-top: .75em;
-                padding-left: .5em;
-                padding-right: .5em;
+                padding-top: .75em; padding-left: .5em; padding-right: .5em;
             }
             #events-gist > p > a {
-                color:#ff74ea;
-                text-decoration: none;
+                color:#ff74ea; text-decoration: none;
             }
             #rolls-title {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 3.5rem;
-                justify-content: center;
-                align-items: center;
-            }
-            #rolls-title > p:not(:last-child) {
-                padding-right: .1em;
-            }
-            #rolls-title > p:last-child {
-                padding-right: .2em;
+                display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
             }
             #rolls-times {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                display: flex; flex-direction: column; justify-content: center; align-items: center;
             }
             #saturday-row {
-                margin-top: 1rem;
-                display: flex;
-                font-size: 2rem;
-                flex-wrap: wrap;
+                margin-top: 1rem; display: flex; font-size: 2rem; flex-wrap: wrap;
             }
             #sunday-row {
-                margin-top: 1rem;
-                display: flex;
-                font-size: 2rem;
-                flex-wrap: wrap;
+                margin-top: 1rem; display: flex; font-size: 2rem; flex-wrap: wrap;
             }
             #saturday-row > p:not(:last-child){
-                margin-right: 2vw;
-                padding-right: .5em;
+                margin-right: 2vw; padding-right: .5em;
             }
             #sunday-row > p:not(:last-child){
-                margin-right: 2vw;
-                padding-right: .5em;
+                margin-right: 2vw; padding-right: .5em;
             }
             #weekend-rolls {
                 margin-top: 1em;
             }
             #rolls-gist {
-                margin-top: 1em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                font-size: 2rem;
+                margin-top: 1em; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; font-size: 2rem; font-family: 'sf-compact-italic';
             }
             #rolls-gist > p:not(:last-child) {
                 padding-right: .35em;
             }
-            #rolls-gist > a {
-                color: #ff74ea;
-                padding-right: .35em;
-                text-decoration: none;
+            #rolls-gist > p > a {
+                color: #ff74ea; padding-right: .35em; text-decoration: none;
             }
-            #other {
-                margin-top: 1em;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
-            #other > p {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 3.5rem;
-                justify-content: center;
-                align-items: center;
-            }
-            #other-gist {
-                font-family: 'sf-compact-italic';
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                font-size: 1.5rem;
-            }
-            #other-gist > p > a {
-                color:#ff74ea;
-                text-decoration: none;
-            }
-            #other-gist > p {
-                padding-top: .75em;
-                padding-left: .5em;
-                padding-right: .5em;
-            }
-            #socials{
-                margin-top: 1em;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            #moto {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                font-size: 3.5rem;
-            }
-            #moto > p:not(:last-child) {
-                padding-right: .1em;
-            }
-            /* #logos {
-                margin-top: .75em;
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                padding-bottom: 2em;
-            } */
         </style>
     </head>
     <body>
@@ -213,13 +87,13 @@
             <div id="container-container">
                 <div id="header">
                     <div id="title">
-                        <p>SDC</p><p>RD24</p><p>Pushers</p>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTu8_NTbqNkaQMVc1otn-MlHeUP27OxF034xnXC2bLqQcDsbNEis4DoGgCL0B80OAQL2uohm4B6kyzzNVtnEmmMI_sJtQ=s2560" style="height: 220px; width: auto;"/>
                     </div>
                 </div>
 
                 <div id="events">
                     <div id="events-title">
-                        <p>Events</p><p>/</p><p>WorKouts</p>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRqYadrlgNHMN4F9DYe-g87fAR5McLkJXWWAnF0GknlPns4cIFnJyefHgeGD3fAuWvfj1rDbpFvd9Cl83X1Q7hOpH4rbg=s1600" style="height: 70px; width: auto;">
                     </div>
                     <div id="events-gist">
                         <p>
@@ -232,43 +106,39 @@
 
                 <div id="weekend-rolls">
                     <div id="rolls-title">
-                        <p>WeeKenD</p><p>Rolls</p>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYShA8W21Hqx04lXBuRs79-X9jG1AMsv_K1zZgSNKHl8Xd9xaMQTHqWrQ1hs8lfg1owbFVU86Z4k35lyCFSHM03G1tyR=s1600" style="height: 70px; width: auto;"/>
                     </div>
                     <div id="rolls-times">
-                        <div id="saturday-row">
-                            <p>SaturDay</p><p>-</p><p>7-9AM</p>
-                        </div>
-                        <div id="sunday-row">
-                            <p>SunDay</p><p>-</p><p>7-9AM</p>
-                        </div>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRFJr-Jd03-CbcsObq1aHcjAPqvWxCPmbZ9dcwxy5WqGvBOE7ah6xO7-Ol3PK29K9aEGfo855CeHOFqViP7rqhSzQIx=s1600" style="height: 70px; width: auto; margin-top: 10px;"/>
                     </div>
                     <div id="rolls-gist">
-                        <p>Please</p><p>Meet</p><a href = "https://maps.app.goo.gl/suGsrxVkJBiw6oa5A" target="_blank"
-                        >Here</a><p>!!!</p>
+                        <p>We will meet <a href = "https://maps.app.goo.gl/suGsrxVkJBiw6oa5A" target="_blank"
+                            >Here</a>
+                        </p>
                     </div>
                 </div>
 
-                <div id="other">
-                    <p>Other</p>
-                    <div id="other-gist">
-                        <p>
-                            Please fill out this <a href="" target="_blank"
+                <div id="other" style="margin-top: 1em; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTtA1O1WiWJvKflC00RPIZwIq0No1ttK1CisW-zwahNfw1MmEbzk5DYbien4DT6IfypQvQ3CXPudAAjl0tLt2GIglaMbQ=s2560" style="height: 47px; width: auto;"/>
+                    <div id="other-gist" style="font-family: 'sf-compact-italic'; display: flex; justify-content: center; align-content: center; text-align: center; font-size: 1.5rem;">
+                        <p style="padding-top: .75em; padding-left: .5em; padding-right: .5em;">
+                            Please fill out this <a href="" target="_blank" style="color:#ff74ea; text-decoration: none;"
                             >form</a> to be added to our preliminary roster 
                             for raceday teams and push practice
                         </p>
                     </div>
                 </div>
 
-                <div id="socials">
-                    <div id="moto">
-                        <p>SDC</p><p>READY</p><p>!!!</p>
+                <div id="socials" style="margin-top: 1em; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div id="moto" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; font-size: 3.5rem;">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQD7LLEagClWlMk4JOGYg130kpHgXpCJeQWDTEBFnbwjD6Bq44HlAraFr5ulqBxQQI9P7fbHeweQX0H5Vl1d__w9A5Y=s1600" style="height: 70px; width: auto;"/>
                     </div>
-                    <div id="logos" style="margin-top: .75em; width: 100%; display: flex; justify-content: space-evenly; align-items: center; padding-bottom: 2em;">
+                    <div id="logos" style="margin-top: .75em; width: 100%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; padding-bottom: 2em;">
                         <a href="https://discord.gg/gywDUbde" target="_blank" style="display: inline-block;">
                             <img id="discord" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYST8TmOoOitBTUTdZVlTicIbYDLNUFhYd9mHE1o_KDeA32YsFZHdLG_e11rEEz7HXMeCP2r1T-UmLqz-nyVZxjf_wDNsA=s1600" style="height: 60px; width: auto;">
                         </a>
                         <a href="https://www.instagram.com/sdcbuggy/?next=%2F" target="_blank">
-                            <img id="instagram" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTS66WkKFcaXsfmFAXHBKwujUqZPK79ss-78hxUhjPDb3cHa-9_qOjbVf0leYw_HPa0R2RcZMkoy3OXSPxlgXD8y4w5kA=s2560" alt="Instagram Logo" title="Instagram Logo" style="display:block; height: 90px; width: auto;">
+                            <img id="instagram" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTS66WkKFcaXsfmFAXHBKwujUqZPK79ss-78hxUhjPDb3cHa-9_qOjbVf0leYw_HPa0R2RcZMkoy3OXSPxlgXD8y4w5kA=s2560" alt="Instagram Logo" title="Instagram Logo" style="height: 90px; width: auto;">
                         </a>            
                                     
                     </div>
